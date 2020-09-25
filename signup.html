@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+.form-template{
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    margin-top: 50px;
+    margin:20px;
+}
+.form-header{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-header h1{
+    color: deeppink;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.form-container{
+    padding: 20px;
+}
+input[type=email] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    width:100%;
+}
+input[type=password] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    width:100%;
+}
+input[type=checkbox] {
+    margin: 20px 0;
+ }
+ .form-container input[type=submit] {
+     outline: none;
+     border: none;
+     border-radius: 20px;
+     background-color:deeppink;
+     color: white;
+     padding: 10px 20px;
+     margin-top: 30px;
+ }
+.form-container p{
+    font-size: 12px;
+    color: grey;
+    display: inline-block;
+}
+.form-container p b{
+    color: #3498db;
+}
+.form-container p#p3{
+    display: inline-block;
+    margin-left: 20px;
+}
+.form-footer{
+    background-color: #778899;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-footer .social i{
+    color: white;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+    </style>
+</head>
+<body>
+     <div class="form-template">
+            <div class="form-header">
+                <h1>SIGN UP</h1>  
+            </div>
+            <div class="form-container">
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <div>
+                    <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+                </div>
+                <div>
+                    <input type="password" placeholder="Confirm Password" id="cpwd" name="cpwd" required>
+                </div>
+                <input type="checkbox" name="chk" id="chk">
+                <p>Aceept the <b>Terms and Conditions </b></p>
+                <input type="submit" value="SIGN UP">
+                <p id="p3">Have account? <b>Sign In</b></p>    
+            </div>
+            <div class="form-footer">
+                <div class="social">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google"></i>
+                </div>
+            </div>
+        </div>    
+</body>
+</html>
