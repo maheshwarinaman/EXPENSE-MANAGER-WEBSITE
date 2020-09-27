@@ -62,46 +62,41 @@ li a i {
             width: 100%;
             height:532px;
             display:flex;
+            padding-top: 30px;
             text-align: center;
             justify-content: center;
-            background-image: url(signup-background.jpg);
+            background-image: url(login-bg.jpg);
         }
         .form-template{
     width: 300px;
-    height: 400px;
+    height: 350px;
     background-color: #fff;
     margin-top: 50px;
     margin:20px;
 }
 .form-header{
-    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to right, orange, red);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .form-header h1{
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
     padding: 10px 0px;
+}
+.form-header .social i{
+    color: white;
+    font-size: 20px;
+    padding: 7px 10px 20px;
 }
 .form-container{
     padding: 20px;
 }
-input[type=name] {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid grey;
-    padding: 10px 0px;
-    width:100%;
-}
 input[type=email] {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid grey;
-    padding: 10px 0px;
-    width:100%;
-}
-input[type=phno] {
     outline: none;
     border: none;
     border-bottom: 1px solid grey;
@@ -115,48 +110,30 @@ input[type=password] {
     padding: 10px 0px;
     width:100%;
 }
-.form-container input[type=submit] {
+input[type=submit] {
     outline: none;
     border: none;
     border-radius: 20px;
     background-color: grey;
-    display: block;
-    width: 100%;
-    background: linear-gradient(to right, skyblue, blue);
     color: white;
     padding: 10px 20px;
-    margin-top: 0px;
+    margin-top: 30px;
 }
 .form-container p{
     font-size: 12px;
-    color: #3498db;
+    color: grey;
     padding:20px 0;
     text-align: right;
 }
 .form-container p b{
-    color: #3498db;
-    text-align: center;
+    color:black;
 }
-.form-container #p4{
-    color: black;
-    text-align: center;
-    margin-top: -5px;
+.form-container #p2{
+    display: inline-block;
+    margin-left: 15px;
 }
-.form-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form-footer .social i{
-    color: #3498db;
-    font-size: 20px;
-    width: 70px;
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px 0px;
-    box-shadow: 2px 2px 5px #3498db;
-    margin-top: -10px;
-}
+        
+        
 .bottom{
     background-color:#333333;
     width:100%;
@@ -192,32 +169,29 @@ input[type=password] {
     <div class="container">
     <div class="form-template">
         <div class="form-header">
-            <h1>SIGN UP</h1>  
-        </div>
-        <div class="form-container">
-            <div>
-                <input type="email" name="name" id="name" placeholder="Enter Name">
-            </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Enter Email">
-            </div>
-            <div>
-                <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
-            </div>
-            <div style="margin-bottom: 30px;">
-                <input type="email" name="phno" id="phno" placeholder="Enter Phone No.">
-            </div>
-            <input type="submit" value="SIGN UP">
-            <p id="p4"><b>FOLLOW US ON</b></p>
-        </div>
-        <div class="form-footer">
+            <h1>LOGIN</h1>
+            <h5 style="text-align: center; color: white;">Follow Us on</h5>
             <div class="social">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-google"></i>
             </div>
         </div>
-    </div>  
+        <div class="form-container">
+            <div>
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+            </div>
+            <div>
+                <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+            </div>
+
+            <input type="submit" value="LOGIN">
+            <p id="p2">Don't have account? <b> Sign Up</b></p>
+        </div>
+        <div class="form-footer"></div>
+    </div>
+    
+        
     </div> 
     <div class="bottom">
         <h3>Copyright @ Naman-Nikhil All rights reserved.</h3>
