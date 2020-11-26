@@ -13,7 +13,7 @@ $result = mysqli_query($con, "SELECT id,email FROM user WHERE email='$email' and
 $num = mysqli_num_rows($result);
 // If the email and password are not present in the database, the mysqli_num_rows returns 0, it is assigned to $num.
 if ($num == 0) {
-  echo "<script>alert('Enter correct email-id and password')</script>";
+  echo "<script>alert('Enter correct email-id or password')</script>";
   echo("<script>location:href='login.php'</script>");
   
 } else {
